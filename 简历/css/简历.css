@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: darkgrey;
+    margin-left:227px;
+    margin-right:227px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    border:1px solid black;/*盒子模型，使用边框*/
+    padding:0px 0px 0px 0px;
+    line-height: 1.7;/*行高*/
+    /*font-family:sans-serif;*/
+    /*font-size:15px;*/
+    /*aliceblue*/
+}
+#container{
+    text-indent: 2em;/*文本缩进*/
+    background-color: aliceblue;
+    padding: 2em;
+}
+
+h1{
+    color: coral;
+    text-align: center;
+    /*text-shadow: 10px 5px 3px darkorange;*/
+    font-family:cursive;
+    font-size: 50px;
+    font-weight: bold;/*文字粗细*/
+    text-shadow: 0 1px #808d93,
+                -1px 0 #cdd2d5,
+                -1px 2px #808d93,
+                -2px 1px #cdd2d5,
+                -2px 3px #808d93,
+                -3px 2px #cdd2d5,
+                -3px 4px #808d93,
+                -4px 3px #cdd2d5,
+                -4px 5px #808d93,
+                -5px 4px #cdd2d5,
+                -5px 6px #808d93,
+                -6px 5px #cdd2d5,
+                -6px 7px #808d93,
+                -7px 6px #cdd2d5,
+                -7px 8px #808d93,
+                -8px 7px #cdd2d5;
+}
+h2{
+    font-family: cursive;
+    font-weight: bold;
+}
+h3{
+    border-top:2px solid #eaeaea;
+    text-shadow: 1px 1px 1px red,
+    2px 2px 1px red;
+}
+.main{
+    float: left;
+    width: 70%;
+    /*display: inline-block;*/
+}
+.photo{
+    /*width: 50%;*/
+    /*float: right;*/
+    /*size: auto;*/
+    /*display: inline-block;*/
+}
+h4{
+    font-style: italic;
+}
+.a{
+    background-image: url("../image/甜甜圈.png");
+    background-repeat:repeat-x;
+    background-size: 45px 45px;
+    background-position: bottom;
+}
+ul{
+    list-style-type: circle;
+}
+.type1{
+    list-style-image: url("../image/favicon-16x16-next.png");
+}
+a:link {
+    text-decoration: none;
+    color: #265301;
+}
+
+a:visited {
+    color: #437A16;
+}
+
+a:focus {
+    border-bottom: 1px solid;
+    background: #BAE498;
+}
+
+a:hover {
+    border-bottom: 1px solid;
+    background: #CDFEAA;
+}
+
+a:active {
+    background: #265301;
+    color: #CDFEAA;
+}

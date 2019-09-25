@@ -1,0 +1,15 @@
+/**{*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*}*/
+body{
+    width:90%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+span{
+    font-weight: bold;
+}
+body{
+    border:1px solid black;
+}

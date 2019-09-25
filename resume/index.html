@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="UTF-8">
+    <title>三种简历</title>
+    <link rel="stylesheet" type="text/css" href="css/style_2.css" id="link1">
+</head>
+<body>
+    <div>
+        <h1>简历</h1>
+    </div>
+    <div>
+        <article>
+        <div class="aside"><h2>基本信息</h2></div>
+        <div class="content_1">
+        <p>
+            <span>姓名</span>&nbsp&nbsp张三&nbsp&nbsp&nbsp&nbsp&nbsp
+            <span>性别</span>&nbsp&nbsp男&nbsp&nbsp&nbsp&nbsp&nbsp
+            <span>应聘职位</span>&nbsp&nbspWeb前端工程师
+        </p>
+        </div>
+        </article>
+        <article>
+        <div class="aside"><h2>联系方式</h2></div>
+        <div class="content_1">
+        <p>
+            <span>手机</span>&nbsp&nbsp12312341234&nbsp&nbsp&nbsp&nbsp&nbsp
+            <span>Email</span>&nbsp&nbsp<a href="joinefe@baidu.com">joinefe@baidu.com</a>&nbsp&nbsp&nbsp&nbsp&nbsp
+            <span>个人主页</span>&nbsp&nbsp<a href="https://github.com/zwh98" target="_blank" rel="noopener">Github</a>
+        </p>
+        </div>
+        </article>
+        <article>
+        <div class="aside"><h2>能力描述</h2></div>
+        <div class="content_2">
+        <span>技术能力</span>
+        <p>熟练掌握HTML，CSS，Javascript</p>
+        <span>综合能力</span>
+        <p>良好的沟通，主动积极，努力勤奋</p>
+        </div>
+        </article>
+        <article>
+        <div class="aside"><h2>教育经历</h2></div>
+        <div class="content_2">
+        <span>本科</span>
+        <p>百度前端技术学院小薇学院</p>
+        <span>研究生</span>
+        <p>百度前端技术学院大斌学院</p>
+        </div>
+        </article>
+        <article>
+        <div class="aside"><h2>项目经历</h2></div>
+        <div class="content_2">
+        <span>小度小度</span>
+        <p>作为前端工程师角色参与了ABC组件的开发</p>
+        <span>SAN Doc</span>
+        <p>作为文档工程师参与了SAN Doc编写</p>
+        </div>
+        </article>
+    </div>
+    <div class="boxbtn">
+        <input type="button" value="替换样式" class="btn" onclick="modify()">
+        <!-- <input type="button" value="更改外观2" class="btn1" onclick="modify1()"/>
+        <input type="button" value="更改外观3" class="btn2" onclick="modify2()"/> -->
+    </div>
+    <script>
+        function modify(){
+            var click = document.getElementById("link1").href ='css/style_1.css'
+        }
+        function modify1(){
+            var click = document.getElementById("link1").href ='css/style_2.css'
+        }
+        function modify2(){
+            var click = document.getElementById("link1").href ='css/style_3.css'
+        }
+        var click = document.getElementById("link1");
+        var src1 = "css/style_1.css";
+        var src2 = "css/style_2.css";
+        var src3 = "css/style_3.css";
+        // function modify(){
+        //     debugger;
+        //     if(click("href") == src3){
+        //         click.href = src2
+        //     }
+        //     else if(click("href") == src2){
+        //         click.href = src1;
+        //     }
+        //     else{
+        //         click.href = src3;
+        //     }
+        //     console.log(click.href);
+        // }
+        function modify() {
+            // debugger;
+            var obj = document.getElementById("link1");
+            if(obj.getAttribute("href")==src3){
+                obj.setAttribute("href","css/style_2.css");
+            }else if(obj.getAttribute("href")==src2){
+                obj.setAttribute("href","css/style_1.css");
+            }
+            else{
+                obj.setAttribute("href","css/style_3.css");
+            }
+        }
+    </script>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+</html>
